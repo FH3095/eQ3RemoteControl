@@ -1,0 +1,15 @@
+
+<Files radiator.py>
+	Options +ExecCGI
+	SetHandler cgi-script
+</Files>
+
+Header setifempty "Strict-Transport-Security"	"max-age=31536000"
+Header setifempty "X-Content-Type-Options"	"nosniff"
+Header setifempty "X-Frame-Options"			"SAMEORIGIN"
+Header setifempty "Content-Security-Policy"	"default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self';"
+Header setifempty "Referrer-Policy"			"strict-origin"
+Header setifempty "Permissions-Policy"		"camera=(), display-capture=(), geolocation=(), microphone=(), web-share=()"
+Header setifempty "Cross-Origin-Embedder-Policy"	"require-corp"
+Header setifempty "Cross-Origin-Opener-Policy"		"same-origin"
+Header setifempty "Cross-Origin-Resource-Policy"	"same-origin"

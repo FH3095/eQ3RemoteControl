@@ -1,0 +1,6 @@
+
+eq3Path = "/home/fh/prog/heizung/eQ-3-radiator-thermostat/eq3.exp"
+webRoot = "https://fh-home.www.4fh.eu/private/heizung/"
+
+[DogRoom]
+mac = "00:1A:22:1B:E0:6F"
